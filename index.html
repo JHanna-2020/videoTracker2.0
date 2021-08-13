@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateTable();">
+    <div id="form">
+        <form action="">
+            <label for="">Video Title:</label>
+            <input type="text" name="" id="title">
+            <label for="">Status</label>
+            
+            <label for="">URL (If Applicable)</label>
+            <input type="url" name="" id="url">
+            <button type="button" onclick="formFillOut();  addVideo(); updateTable();">Add Video</button>
+            <button type="button" onclick="clear();">Clear</button>
+        </form>
+    </div>
+    <div id="latest">
+        <h1>Latest Video Uploaded</h1>
+        <p id="latestTitle">Video Title: </p>
+        <p id="URL">URL: </p>
+    </div>
+    <div class="table">
+        <table id="videos">
+            <tr>
+                <th>Video Title</th>
+                <th>Link</th>
+            </tr>
+            
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
